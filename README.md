@@ -413,9 +413,9 @@ TLSv1.3 最少會傳3個封包
 **pcapng**
 ---
 
-![](./assets/pcapng/tls-v1-2.badssl.com_202201101347.pcapng)
+[tls-v1-2.badssl.com_202201101347.pcapng](./assets/pcapng/tls-v1-2.badssl.com_202201101347.pcapng)
 
-![](./assets/pcapng/wikipedia_202201092059.pcapng)
+[wikipedia_202201092059.pcapng](./assets/pcapng/wikipedia_202201092059.pcapng)
 
 
 
