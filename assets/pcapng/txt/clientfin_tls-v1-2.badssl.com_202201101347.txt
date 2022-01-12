@@ -1,0 +1,25 @@
+Transport Layer Security
+    TLSv1.2 Record Layer: Handshake Protocol: Client Key Exchange
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 70
+        Handshake Protocol: Client Key Exchange
+            Handshake Type: Client Key Exchange (16)
+            Length: 66
+            EC Diffie-Hellman Client Params
+                Pubkey Length: 65
+                Pubkey: 04f76173589b15a15f637ab4bd7c1ee47a77eff799d30a97…
+    TLSv1.2 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.2 Record Layer: Handshake Protocol: Finished
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 40
+        Handshake Protocol: Finished
+            Handshake Type: Finished (20)
+            Length: 12
+            Verify Data
+

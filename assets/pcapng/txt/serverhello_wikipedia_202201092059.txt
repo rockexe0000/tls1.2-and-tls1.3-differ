@@ -1,0 +1,488 @@
+Transport Layer Security
+    TLSv1.3 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 122
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 118
+            Version: TLS 1.2 (0x0303)
+            Random: 454e6e6c0368df1f6c1b691facee039b6fd9236ef4af3997…
+            Session ID Length: 32
+            Session ID: 69afc209cda8e819e788e06ab02886be21246d1cb6979c48…
+            Cipher Suite: TLS_AES_256_GCM_SHA384 (0x1302)
+            Compression Method: null (0)
+            Extensions Length: 46
+            Extension: supported_versions (len=2)
+                Type: supported_versions (43)
+                Length: 2
+                Supported Version: TLS 1.3 (0x0304)
+            Extension: key_share (len=36)
+                Type: key_share (51)
+                Length: 36
+                Key Share extension
+                    Key Share Entry: Group: x25519, Key Exchange length: 32
+                        Group: x25519 (29)
+                        Key Exchange Length: 32
+                        Key Exchange: bd6db65d05c9c9f15c8abbcc0709bb9583a914121ebc61c8…
+    TLSv1.3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.3 Record Layer: Handshake Protocol: Encrypted Extensions
+        Opaque Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 36
+        [Content Type: Handshake (22)]
+        Handshake Protocol: Encrypted Extensions
+            Handshake Type: Encrypted Extensions (8)
+            Length: 15
+            Extensions Length: 13
+            Extension: server_name (len=0)
+                Type: server_name (0)
+                Length: 0
+            Extension: application_layer_protocol_negotiation (len=5)
+                Type: application_layer_protocol_negotiation (16)
+                Length: 5
+                ALPN Extension Length: 3
+                ALPN Protocol
+                    ALPN string length: 2
+                    ALPN Next Protocol: h2
+    TLSv1.3 Record Layer: Handshake Protocol: Certificate
+        Opaque Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 3494
+        [Content Type: Handshake (22)]
+        Handshake Protocol: Certificate
+            Handshake Type: Certificate (11)
+            Length: 3473
+            Certificate Request Context Length: 0
+            Certificates Length: 3469
+            Certificates (3469 bytes)
+                Certificate Length: 2086
+                Certificate: 30820822308207a7a0030201020210027d941b292cdb2eda… (id-at-commonName=*.wikipedia.org,id-at-organizationName=Wikimedia Foundation, Inc.,id-at-localityName=San Francisco,id-at-stateOrProvinceName=California,id-at-countryName=US
+                    signedCertificate
+                        version: v3 (2)
+                        serialNumber: 0x027d941b292cdb2edaf993111853743e
+                        signature (ecdsa-with-SHA384)
+                            Algorithm Id: 1.2.840.10045.4.3.3 (ecdsa-with-SHA384)
+                        issuer: rdnSequence (0)
+                            rdnSequence: 3 items (id-at-commonName=DigiCert TLS Hybrid ECC SHA384 2020 CA1,id-at-organizationName=DigiCert Inc,id-at-countryName=US)
+                                RDNSequence item: 1 item (id-at-countryName=US)
+                                    RelativeDistinguishedName item (id-at-countryName=US)
+                                        Id: 2.5.4.6 (id-at-countryName)
+                                        CountryName: US
+                                RDNSequence item: 1 item (id-at-organizationName=DigiCert Inc)
+                                    RelativeDistinguishedName item (id-at-organizationName=DigiCert Inc)
+                                        Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert Inc
+                                RDNSequence item: 1 item (id-at-commonName=DigiCert TLS Hybrid ECC SHA384 2020 CA1)
+                                    RelativeDistinguishedName item (id-at-commonName=DigiCert TLS Hybrid ECC SHA384 2020 CA1)
+                                        Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert TLS Hybrid ECC SHA384 2020 CA1
+                        validity
+                            notBefore: utcTime (0)
+                                utcTime: 21-10-19 00:00:00 (UTC)
+                            notAfter: utcTime (0)
+                                utcTime: 22-11-17 23:59:59 (UTC)
+                        subject: rdnSequence (0)
+                            rdnSequence: 5 items (id-at-commonName=*.wikipedia.org,id-at-organizationName=Wikimedia Foundation, Inc.,id-at-localityName=San Francisco,id-at-stateOrProvinceName=California,id-at-countryName=US)
+                                RDNSequence item: 1 item (id-at-countryName=US)
+                                    RelativeDistinguishedName item (id-at-countryName=US)
+                                        Id: 2.5.4.6 (id-at-countryName)
+                                        CountryName: US
+                                RDNSequence item: 1 item (id-at-stateOrProvinceName=California)
+                                    RelativeDistinguishedName item (id-at-stateOrProvinceName=California)
+                                        Id: 2.5.4.8 (id-at-stateOrProvinceName)
+                                        DirectoryString: printableString (1)
+                                            printableString: California
+                                RDNSequence item: 1 item (id-at-localityName=San Francisco)
+                                    RelativeDistinguishedName item (id-at-localityName=San Francisco)
+                                        Id: 2.5.4.7 (id-at-localityName)
+                                        DirectoryString: printableString (1)
+                                            printableString: San Francisco
+                                RDNSequence item: 1 item (id-at-organizationName=Wikimedia Foundation, Inc.)
+                                    RelativeDistinguishedName item (id-at-organizationName=Wikimedia Foundation, Inc.)
+                                        Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: printableString (1)
+                                            printableString: Wikimedia Foundation, Inc.
+                                RDNSequence item: 1 item (id-at-commonName=*.wikipedia.org)
+                                    RelativeDistinguishedName item (id-at-commonName=*.wikipedia.org)
+                                        Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: uTF8String (4)
+                                            uTF8String: *.wikipedia.org
+                        subjectPublicKeyInfo
+                            algorithm (id-ecPublicKey)
+                                Algorithm Id: 1.2.840.10045.2.1 (id-ecPublicKey)
+                                ECParameters: namedCurve (0)
+                                    namedCurve: 1.2.840.10045.3.1.7 (secp256r1)
+                            Padding: 0
+                            subjectPublicKey: 04e8502cd0d24ea2b192aab6730fcfa0b457e5c2c07cae6e…
+                        extensions: 10 items
+                            Extension (id-ce-authorityKeyIdentifier)
+                                Extension Id: 2.5.29.35 (id-ce-authorityKeyIdentifier)
+                                AuthorityKeyIdentifier
+                                    keyIdentifier: 0abc0829178ca5396d7a0ece33c72eb3edfbc37a
+                            Extension (id-ce-subjectKeyIdentifier)
+                                Extension Id: 2.5.29.14 (id-ce-subjectKeyIdentifier)
+                                SubjectKeyIdentifier: 89258ef185f97f5cd18714984a5ef41c321d5144
+                            Extension (id-ce-subjectAltName)
+                                Extension Id: 2.5.29.17 (id-ce-subjectAltName)
+                                GeneralNames: 39 items
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikipedia.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikimedia.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: mediawiki.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikibooks.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikidata.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikinews.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikiquote.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikisource.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikiversity.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikivoyage.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wiktionary.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikimediafoundation.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: w.wiki
+                                    GeneralName: dNSName (2)
+                                        dNSName: wmfusercontent.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikipedia.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikimedia.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikimedia.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.planet.wikimedia.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.mediawiki.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.mediawiki.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikibooks.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikibooks.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikidata.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikidata.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikinews.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikinews.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikiquote.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikiquote.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikisource.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikisource.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikiversity.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikiversity.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikivoyage.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wikivoyage.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wiktionary.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.m.wiktionary.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wikimediafoundation.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.wmfusercontent.org
+                                    GeneralName: dNSName (2)
+                                        dNSName: wikipedia.org
+                            Extension (id-ce-keyUsage)
+                                Extension Id: 2.5.29.15 (id-ce-keyUsage)
+                                critical: True
+                                Padding: 7
+                                KeyUsage: 80
+                                    1... .... = digitalSignature: True
+                                    .0.. .... = contentCommitment: False
+                                    ..0. .... = keyEncipherment: False
+                                    ...0 .... = dataEncipherment: False
+                                    .... 0... = keyAgreement: False
+                                    .... .0.. = keyCertSign: False
+                                    .... ..0. = cRLSign: False
+                                    .... ...0 = encipherOnly: False
+                                    0... .... = decipherOnly: False
+                            Extension (id-ce-extKeyUsage)
+                                Extension Id: 2.5.29.37 (id-ce-extKeyUsage)
+                                KeyPurposeIDs: 2 items
+                                    KeyPurposeId: 1.3.6.1.5.5.7.3.1 (id-kp-serverAuth)
+                                    KeyPurposeId: 1.3.6.1.5.5.7.3.2 (id-kp-clientAuth)
+                            Extension (id-ce-cRLDistributionPoints)
+                                Extension Id: 2.5.29.31 (id-ce-cRLDistributionPoints)
+                                CRLDistPointsSyntax: 2 items
+                                    DistributionPoint
+                                        distributionPoint: fullName (0)
+                                            fullName: 1 item
+                                                GeneralName: uniformResourceIdentifier (6)
+                                                    uniformResourceIdentifier: http://crl3.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crl
+                                    DistributionPoint
+                                        distributionPoint: fullName (0)
+                                            fullName: 1 item
+                                                GeneralName: uniformResourceIdentifier (6)
+                                                    uniformResourceIdentifier: http://crl4.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crl
+                            Extension (id-ce-certificatePolicies)
+                                Extension Id: 2.5.29.32 (id-ce-certificatePolicies)
+                                CertificatePoliciesSyntax: 1 item
+                                    PolicyInformation
+                                        policyIdentifier: 2.23.140.1.2.2 (joint-iso-itu-t.23.140.1.2.2)
+                                        policyQualifiers: 1 item
+                                            PolicyQualifierInfo
+                                                Id: 1.3.6.1.5.5.7.2.1 (id-qt-cps)
+                                                DirectoryString: http://www.digicert.com/CPS
+                            Extension (id-pe-authorityInfoAccess)
+                                Extension Id: 1.3.6.1.5.5.7.1.1 (id-pe-authorityInfoAccess)
+                                AuthorityInfoAccessSyntax: 2 items
+                                    AccessDescription
+                                        accessMethod: 1.3.6.1.5.5.7.48.1 (id-ad-ocsp)
+                                        accessLocation: 6
+                                            uniformResourceIdentifier: http://ocsp.digicert.com
+                                    AccessDescription
+                                        accessMethod: 1.3.6.1.5.5.7.48.2 (id-ad-caIssuers)
+                                        accessLocation: 6
+                                            uniformResourceIdentifier: http://cacerts.digicert.com/DigiCertTLSHybridECCSHA3842020CA1-1.crt
+                            Extension (id-ce-basicConstraints)
+                                Extension Id: 2.5.29.19 (id-ce-basicConstraints)
+                                critical: True
+                                BasicConstraintsSyntax [0 length]
+                            Extension (SignedCertificateTimestampList)
+                                Extension Id: 1.3.6.1.4.1.11129.2.4.2 (SignedCertificateTimestampList)
+                                Serialized SCT List Length: 360
+                                Signed Certificate Timestamp (Unknown Log)
+                                    Serialized SCT Length: 118
+                                    SCT Version: 0
+                                    Log ID: 2979bef09e393921f056739f63a577e5be577d9c600af8f9…
+                                    Timestamp: Oct 19, 2021 16:24:26.110000000 UTC
+                                    Extensions length: 0
+                                    Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                                        Signature Hash Algorithm Hash: SHA256 (4)
+                                        Signature Hash Algorithm Signature: ECDSA (3)
+                                    Signature Length: 71
+                                    Signature: 30450220132b9fd4bf5d6683c7353a0e8b73e7eaea41d20f…
+                                Signed Certificate Timestamp (Unknown Log)
+                                    Serialized SCT Length: 118
+                                    SCT Version: 0
+                                    Log ID: 51a3b0f5fd01799c566db837788f0ca47acc1b27cbf79e88…
+                                    Timestamp: Oct 19, 2021 16:24:26.102000000 UTC
+                                    Extensions length: 0
+                                    Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                                        Signature Hash Algorithm Hash: SHA256 (4)
+                                        Signature Hash Algorithm Signature: ECDSA (3)
+                                    Signature Length: 71
+                                    Signature: 3045022100ecedb12da63ebc5dae0f48d5705ba4e9633226…
+                                Signed Certificate Timestamp (Unknown Log)
+                                    Serialized SCT Length: 118
+                                    SCT Version: 0
+                                    Log ID: 41c8cab1df22464a10c6a13a0942875e4e318b1b03ebeb4b…
+                                    Timestamp: Oct 19, 2021 16:24:25.988000000 UTC
+                                    Extensions length: 0
+                                    Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                                        Signature Hash Algorithm Hash: SHA256 (4)
+                                        Signature Hash Algorithm Signature: ECDSA (3)
+                                    Signature Length: 71
+                                    Signature: 3045022100fe13fa3e0b2f1cac7106d1526483b3b92419d6…
+                    algorithmIdentifier (ecdsa-with-SHA384)
+                        Algorithm Id: 1.2.840.10045.4.3.3 (ecdsa-with-SHA384)
+                    Padding: 0
+                    encrypted: 3066023100cdaae816180b5ede24bc4476f3a3e51ea50319…
+                Extensions Length: 322
+                Extension: status_request (len=318)
+                    Type: status_request (5)
+                    Length: 318
+                    Certificate Status Type: OCSP (1)
+                    OCSP Response Length: 314
+                    OCSP Response
+                        responseStatus: successful (0)
+                        responseBytes
+                            ResponseType Id: 1.3.6.1.5.5.7.48.1.1 (id-pkix-ocsp-basic)
+                            BasicOCSPResponse
+                                tbsResponseData
+                                    responderID: byKey (2)
+                                        byKey: 0abc0829178ca5396d7a0ece33c72eb3edfbc37a
+                                    producedAt: 2022-01-08 09:18:49 (UTC)
+                                    responses: 1 item
+                                        SingleResponse
+                                            certID
+                                                hashAlgorithm (SHA-1)
+                                                    Algorithm Id: 1.3.14.3.2.26 (SHA-1)
+                                                issuerNameHash: 2b1d1e98ccf37604d6c1c8bd15a224c804130038
+                                                issuerKeyHash: 0abc0829178ca5396d7a0ece33c72eb3edfbc37a
+                                                serialNumber: 0x027d941b292cdb2edaf993111853743e
+                                            certStatus: good (0)
+                                                good
+                                            thisUpdate: 2022-01-08 09:03:01 (UTC)
+                                            nextUpdate: 2022-01-15 08:18:01 (UTC)
+                                signatureAlgorithm (ecdsa-with-SHA384)
+                                    Algorithm Id: 1.2.840.10045.4.3.3 (ecdsa-with-SHA384)
+                                Padding: 0
+                                signature: 3066023100816ef16f4bff1d13ed2c2b2f555255bd8e95a0…
+                Certificate Length: 1051
+                Certificate: 30820417308202ffa003020102021007f2f35c87a877af7a… (id-at-commonName=DigiCert TLS Hybrid ECC SHA384 2020 CA1,id-at-organizationName=DigiCert Inc,id-at-countryName=US)
+                    signedCertificate
+                        version: v3 (2)
+                        serialNumber: 0x07f2f35c87a877af7aefe947993525bd
+                        signature (sha384WithRSAEncryption)
+                            Algorithm Id: 1.2.840.113549.1.1.12 (sha384WithRSAEncryption)
+                        issuer: rdnSequence (0)
+                            rdnSequence: 4 items (id-at-commonName=DigiCert Global Root CA,id-at-organizationalUnitName=www.digicert.com,id-at-organizationName=DigiCert Inc,id-at-countryName=US)
+                                RDNSequence item: 1 item (id-at-countryName=US)
+                                    RelativeDistinguishedName item (id-at-countryName=US)
+                                        Id: 2.5.4.6 (id-at-countryName)
+                                        CountryName: US
+                                RDNSequence item: 1 item (id-at-organizationName=DigiCert Inc)
+                                    RelativeDistinguishedName item (id-at-organizationName=DigiCert Inc)
+                                        Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert Inc
+                                RDNSequence item: 1 item (id-at-organizationalUnitName=www.digicert.com)
+                                    RelativeDistinguishedName item (id-at-organizationalUnitName=www.digicert.com)
+                                        Id: 2.5.4.11 (id-at-organizationalUnitName)
+                                        DirectoryString: printableString (1)
+                                            printableString: www.digicert.com
+                                RDNSequence item: 1 item (id-at-commonName=DigiCert Global Root CA)
+                                    RelativeDistinguishedName item (id-at-commonName=DigiCert Global Root CA)
+                                        Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert Global Root CA
+                        validity
+                            notBefore: utcTime (0)
+                                utcTime: 21-04-14 00:00:00 (UTC)
+                            notAfter: utcTime (0)
+                                utcTime: 31-04-13 23:59:59 (UTC)
+                        subject: rdnSequence (0)
+                            rdnSequence: 3 items (id-at-commonName=DigiCert TLS Hybrid ECC SHA384 2020 CA1,id-at-organizationName=DigiCert Inc,id-at-countryName=US)
+                                RDNSequence item: 1 item (id-at-countryName=US)
+                                    RelativeDistinguishedName item (id-at-countryName=US)
+                                        Id: 2.5.4.6 (id-at-countryName)
+                                        CountryName: US
+                                RDNSequence item: 1 item (id-at-organizationName=DigiCert Inc)
+                                    RelativeDistinguishedName item (id-at-organizationName=DigiCert Inc)
+                                        Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert Inc
+                                RDNSequence item: 1 item (id-at-commonName=DigiCert TLS Hybrid ECC SHA384 2020 CA1)
+                                    RelativeDistinguishedName item (id-at-commonName=DigiCert TLS Hybrid ECC SHA384 2020 CA1)
+                                        Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert TLS Hybrid ECC SHA384 2020 CA1
+                        subjectPublicKeyInfo
+                            algorithm (id-ecPublicKey)
+                                Algorithm Id: 1.2.840.10045.2.1 (id-ecPublicKey)
+                                ECParameters: namedCurve (0)
+                                    namedCurve: 1.3.132.0.34 (secp384r1)
+                            Padding: 0
+                            subjectPublicKey: 04c11bc69a5b98d9a429a0e9d404b5dbeba6b26c55c0ffed…
+                        extensions: 8 items
+                            Extension (id-ce-basicConstraints)
+                                Extension Id: 2.5.29.19 (id-ce-basicConstraints)
+                                critical: True
+                                BasicConstraintsSyntax
+                                    cA: True
+                                    pathLenConstraint: 0
+                            Extension (id-ce-subjectKeyIdentifier)
+                                Extension Id: 2.5.29.14 (id-ce-subjectKeyIdentifier)
+                                SubjectKeyIdentifier: 0abc0829178ca5396d7a0ece33c72eb3edfbc37a
+                            Extension (id-ce-authorityKeyIdentifier)
+                                Extension Id: 2.5.29.35 (id-ce-authorityKeyIdentifier)
+                                AuthorityKeyIdentifier
+                                    keyIdentifier: 03de503556d14cbb66f0a3e21b1bc397b23dd155
+                            Extension (id-ce-keyUsage)
+                                Extension Id: 2.5.29.15 (id-ce-keyUsage)
+                                critical: True
+                                Padding: 1
+                                KeyUsage: 86
+                                    1... .... = digitalSignature: True
+                                    .0.. .... = contentCommitment: False
+                                    ..0. .... = keyEncipherment: False
+                                    ...0 .... = dataEncipherment: False
+                                    .... 0... = keyAgreement: False
+                                    .... .1.. = keyCertSign: True
+                                    .... ..1. = cRLSign: True
+                                    .... ...0 = encipherOnly: False
+                                    0... .... = decipherOnly: False
+                            Extension (id-ce-extKeyUsage)
+                                Extension Id: 2.5.29.37 (id-ce-extKeyUsage)
+                                KeyPurposeIDs: 2 items
+                                    KeyPurposeId: 1.3.6.1.5.5.7.3.1 (id-kp-serverAuth)
+                                    KeyPurposeId: 1.3.6.1.5.5.7.3.2 (id-kp-clientAuth)
+                            Extension (id-pe-authorityInfoAccess)
+                                Extension Id: 1.3.6.1.5.5.7.1.1 (id-pe-authorityInfoAccess)
+                                AuthorityInfoAccessSyntax: 2 items
+                                    AccessDescription
+                                        accessMethod: 1.3.6.1.5.5.7.48.1 (id-ad-ocsp)
+                                        accessLocation: 6
+                                            uniformResourceIdentifier: http://ocsp.digicert.com
+                                    AccessDescription
+                                        accessMethod: 1.3.6.1.5.5.7.48.2 (id-ad-caIssuers)
+                                        accessLocation: 6
+                                            uniformResourceIdentifier: http://cacerts.digicert.com/DigiCertGlobalRootCA.crt
+                            Extension (id-ce-cRLDistributionPoints)
+                                Extension Id: 2.5.29.31 (id-ce-cRLDistributionPoints)
+                                CRLDistPointsSyntax: 1 item
+                                    DistributionPoint
+                                        distributionPoint: fullName (0)
+                                            fullName: 1 item
+                                                GeneralName: uniformResourceIdentifier (6)
+                                                    uniformResourceIdentifier: http://crl3.digicert.com/DigiCertGlobalRootCA.crl
+                            Extension (id-ce-certificatePolicies)
+                                Extension Id: 2.5.29.32 (id-ce-certificatePolicies)
+                                CertificatePoliciesSyntax: 5 items
+                                    PolicyInformation
+                                        policyIdentifier: 2.16.840.1.114412.2.1 (US company arc.114412.2.1)
+                                    PolicyInformation
+                                        policyIdentifier: 2.23.140.1.1 (joint-iso-itu-t.23.140.1.1)
+                                    PolicyInformation
+                                        policyIdentifier: 2.23.140.1.2.1 (joint-iso-itu-t.23.140.1.2.1)
+                                    PolicyInformation
+                                        policyIdentifier: 2.23.140.1.2.2 (joint-iso-itu-t.23.140.1.2.2)
+                                    PolicyInformation
+                                        policyIdentifier: 2.23.140.1.2.3 (joint-iso-itu-t.23.140.1.2.3)
+                    algorithmIdentifier (sha384WithRSAEncryption)
+                        Algorithm Id: 1.2.840.113549.1.1.12 (sha384WithRSAEncryption)
+                    Padding: 0
+                    encrypted: 4759817fd41b1fb071f6985d18ba984798b07e762beaff1a…
+                Extensions Length: 0
+    TLSv1.3 Record Layer: Handshake Protocol: Certificate Verify
+        Opaque Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 96
+        [Content Type: Handshake (22)]
+        Handshake Protocol: Certificate Verify
+            Handshake Type: Certificate Verify (15)
+            Length: 75
+            Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                Signature Hash Algorithm Hash: SHA256 (4)
+                Signature Hash Algorithm Signature: ECDSA (3)
+            Signature length: 71
+            Signature: 304502200588d1706df06ac905249a1a417643ea2d627a89…
+    TLSv1.3 Record Layer: Handshake Protocol: Finished
+        Opaque Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 69
+        [Content Type: Handshake (22)]
+        Handshake Protocol: Finished
+            Handshake Type: Finished (20)
+            Length: 48
+            Verify Data
+

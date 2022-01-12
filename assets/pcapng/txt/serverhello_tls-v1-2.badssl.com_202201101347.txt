@@ -1,0 +1,360 @@
+Transport Layer Security
+    TLSv1.2 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 104
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 100
+            Version: TLS 1.2 (0x0303)
+            Random: d8713fa32426191f352b5955353441bf270b32964b1e1354…
+                GMT Unix Time: Jan 26, 2085 06:35:15.000000000 CST
+                Random Bytes: 2426191f352b5955353441bf270b32964b1e1354a35264f5…
+            Session ID Length: 32
+            Session ID: 07a5fc74752ce6aa1525c22ff46a835be1fa7ae425cbffd0…
+            Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xc030)
+            Compression Method: null (0)
+            Extensions Length: 28
+            Extension: renegotiation_info (len=1)
+                Type: renegotiation_info (65281)
+                Length: 1
+                Renegotiation Info extension
+                    Renegotiation info extension length: 0
+            Extension: ec_point_formats (len=4)
+                Type: ec_point_formats (11)
+                Length: 4
+                EC point formats Length: 3
+                Elliptic curves point formats (3)
+                    EC point format: uncompressed (0)
+                    EC point format: ansiX962_compressed_prime (1)
+                    EC point format: ansiX962_compressed_char2 (2)
+            Extension: application_layer_protocol_negotiation (len=11)
+                Type: application_layer_protocol_negotiation (16)
+                Length: 11
+                ALPN Extension Length: 9
+                ALPN Protocol
+                    ALPN string length: 8
+                    ALPN Next Protocol: http/1.1
+    TLSv1.2 Record Layer: Handshake Protocol: Certificate
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 2897
+        Handshake Protocol: Certificate
+            Handshake Type: Certificate (11)
+            Length: 2893
+            Certificates Length: 2890
+            Certificates (2890 bytes)
+                Certificate Length: 1708
+                Certificate: 308206a830820590a00302010202100af06cda37a60b6413… (id-at-commonName=*.badssl.com,id-at-organizationName=Lucas Garron Torres,id-at-localityName=Walnut Creek,id-at-stateOrProvinceName=California,id-at-countryName=US)
+                    signedCertificate
+                        version: v3 (2)
+                        serialNumber: 0x0af06cda37a60b641342f0a1eb1d59fd
+                        signature (sha256WithRSAEncryption)
+                            Algorithm Id: 1.2.840.113549.1.1.11 (sha256WithRSAEncryption)
+                        issuer: rdnSequence (0)
+                            rdnSequence: 3 items (id-at-commonName=DigiCert SHA2 Secure Server CA,id-at-organizationName=DigiCert Inc,id-at-countryName=US)
+                                RDNSequence item: 1 item (id-at-countryName=US)
+                                    RelativeDistinguishedName item (id-at-countryName=US)
+                                        Id: 2.5.4.6 (id-at-countryName)
+                                        CountryName: US
+                                RDNSequence item: 1 item (id-at-organizationName=DigiCert Inc)
+                                    RelativeDistinguishedName item (id-at-organizationName=DigiCert Inc)
+                                        Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert Inc
+                                RDNSequence item: 1 item (id-at-commonName=DigiCert SHA2 Secure Server CA)
+                                    RelativeDistinguishedName item (id-at-commonName=DigiCert SHA2 Secure Server CA)
+                                        Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert SHA2 Secure Server CA
+                        validity
+                            notBefore: utcTime (0)
+                                utcTime: 20-03-23 00:00:00 (UTC)
+                            notAfter: utcTime (0)
+                                utcTime: 22-05-17 12:00:00 (UTC)
+                        subject: rdnSequence (0)
+                            rdnSequence: 5 items (id-at-commonName=*.badssl.com,id-at-organizationName=Lucas Garron Torres,id-at-localityName=Walnut Creek,id-at-stateOrProvinceName=California,id-at-countryName=US)
+                                RDNSequence item: 1 item (id-at-countryName=US)
+                                    RelativeDistinguishedName item (id-at-countryName=US)
+                                        Id: 2.5.4.6 (id-at-countryName)
+                                        CountryName: US
+                                RDNSequence item: 1 item (id-at-stateOrProvinceName=California)
+                                    RelativeDistinguishedName item (id-at-stateOrProvinceName=California)
+                                        Id: 2.5.4.8 (id-at-stateOrProvinceName)
+                                        DirectoryString: printableString (1)
+                                            printableString: California
+                                RDNSequence item: 1 item (id-at-localityName=Walnut Creek)
+                                    RelativeDistinguishedName item (id-at-localityName=Walnut Creek)
+                                        Id: 2.5.4.7 (id-at-localityName)
+                                        DirectoryString: printableString (1)
+                                            printableString: Walnut Creek
+                                RDNSequence item: 1 item (id-at-organizationName=Lucas Garron Torres)
+                                    RelativeDistinguishedName item (id-at-organizationName=Lucas Garron Torres)
+                                        Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: printableString (1)
+                                            printableString: Lucas Garron Torres
+                                RDNSequence item: 1 item (id-at-commonName=*.badssl.com)
+                                    RelativeDistinguishedName item (id-at-commonName=*.badssl.com)
+                                        Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: uTF8String (4)
+                                            uTF8String: *.badssl.com
+                        subjectPublicKeyInfo
+                            algorithm (rsaEncryption)
+                                Algorithm Id: 1.2.840.113549.1.1.1 (rsaEncryption)
+                            subjectPublicKey: 3082010a0282010100c204ecf88cee04c2b3d850d57058cc…
+                                modulus: 0x00c204ecf88cee04c2b3d850d57058cc9318eb5ca86849b0…
+                                publicExponent: 65537
+                        extensions: 10 items
+                            Extension (id-ce-authorityKeyIdentifier)
+                                Extension Id: 2.5.29.35 (id-ce-authorityKeyIdentifier)
+                                AuthorityKeyIdentifier
+                                    keyIdentifier: 0f80611c823161d52f28e78d4638b42ce1c6d9e2
+                            Extension (id-ce-subjectKeyIdentifier)
+                                Extension Id: 2.5.29.14 (id-ce-subjectKeyIdentifier)
+                                SubjectKeyIdentifier: 9deec17b810b3a476971187d113793bca51b3ffb
+                            Extension (id-ce-subjectAltName)
+                                Extension Id: 2.5.29.17 (id-ce-subjectAltName)
+                                GeneralNames: 2 items
+                                    GeneralName: dNSName (2)
+                                        dNSName: *.badssl.com
+                                    GeneralName: dNSName (2)
+                                        dNSName: badssl.com
+                            Extension (id-ce-keyUsage)
+                                Extension Id: 2.5.29.15 (id-ce-keyUsage)
+                                critical: True
+                                Padding: 5
+                                KeyUsage: a0
+                                    1... .... = digitalSignature: True
+                                    .0.. .... = contentCommitment: False
+                                    ..1. .... = keyEncipherment: True
+                                    ...0 .... = dataEncipherment: False
+                                    .... 0... = keyAgreement: False
+                                    .... .0.. = keyCertSign: False
+                                    .... ..0. = cRLSign: False
+                                    .... ...0 = encipherOnly: False
+                                    0... .... = decipherOnly: False
+                            Extension (id-ce-extKeyUsage)
+                                Extension Id: 2.5.29.37 (id-ce-extKeyUsage)
+                                KeyPurposeIDs: 2 items
+                                    KeyPurposeId: 1.3.6.1.5.5.7.3.1 (id-kp-serverAuth)
+                                    KeyPurposeId: 1.3.6.1.5.5.7.3.2 (id-kp-clientAuth)
+                            Extension (id-ce-cRLDistributionPoints)
+                                Extension Id: 2.5.29.31 (id-ce-cRLDistributionPoints)
+                                CRLDistPointsSyntax: 2 items
+                                    DistributionPoint
+                                        distributionPoint: fullName (0)
+                                            fullName: 1 item
+                                                GeneralName: uniformResourceIdentifier (6)
+                                                    uniformResourceIdentifier: http://crl3.digicert.com/ssca-sha2-g6.crl
+                                    DistributionPoint
+                                        distributionPoint: fullName (0)
+                                            fullName: 1 item
+                                                GeneralName: uniformResourceIdentifier (6)
+                                                    uniformResourceIdentifier: http://crl4.digicert.com/ssca-sha2-g6.crl
+                            Extension (id-ce-certificatePolicies)
+                                Extension Id: 2.5.29.32 (id-ce-certificatePolicies)
+                                CertificatePoliciesSyntax: 2 items
+                                    PolicyInformation
+                                        policyIdentifier: 2.16.840.1.114412.1.1 (US company arc.114412.1.1)
+                                        policyQualifiers: 1 item
+                                            PolicyQualifierInfo
+                                                Id: 1.3.6.1.5.5.7.2.1 (id-qt-cps)
+                                                DirectoryString: https://www.digicert.com/CPS
+                                    PolicyInformation
+                                        policyIdentifier: 2.23.140.1.2.3 (joint-iso-itu-t.23.140.1.2.3)
+                            Extension (id-pe-authorityInfoAccess)
+                                Extension Id: 1.3.6.1.5.5.7.1.1 (id-pe-authorityInfoAccess)
+                                AuthorityInfoAccessSyntax: 2 items
+                                    AccessDescription
+                                        accessMethod: 1.3.6.1.5.5.7.48.1 (id-ad-ocsp)
+                                        accessLocation: 6
+                                            uniformResourceIdentifier: http://ocsp.digicert.com
+                                    AccessDescription
+                                        accessMethod: 1.3.6.1.5.5.7.48.2 (id-ad-caIssuers)
+                                        accessLocation: 6
+                                            uniformResourceIdentifier: http://cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt
+                            Extension (id-ce-basicConstraints)
+                                Extension Id: 2.5.29.19 (id-ce-basicConstraints)
+                                critical: True
+                                BasicConstraintsSyntax [0 length]
+                            Extension (SignedCertificateTimestampList)
+                                Extension Id: 1.3.6.1.4.1.11129.2.4.2 (SignedCertificateTimestampList)
+                                Serialized SCT List Length: 360
+                                Signed Certificate Timestamp (Google 'Skydiver' log)
+                                    Serialized SCT Length: 118
+                                    SCT Version: 0
+                                    Log ID: bbd9dfbc1f8a71b593942397aa927b473857950aab52e81a…
+                                    Timestamp: Mar 23, 2020 16:42:41.578000000 UTC
+                                    Extensions length: 0
+                                    Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                                        Signature Hash Algorithm Hash: SHA256 (4)
+                                        Signature Hash Algorithm Signature: ECDSA (3)
+                                    Signature Length: 71
+                                    Signature: 304502200df59505712e5190b660fe128b70100e27470b85…
+                                Signed Certificate Timestamp (Unknown Log)
+                                    Serialized SCT Length: 118
+                                    SCT Version: 0
+                                    Log ID: 2245450759552456963fa12ff1f76d86e0232663adc04b7f…
+                                    Timestamp: Mar 23, 2020 16:42:41.627000000 UTC
+                                    Extensions length: 0
+                                    Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                                        Signature Hash Algorithm Hash: SHA256 (4)
+                                        Signature Hash Algorithm Signature: ECDSA (3)
+                                    Signature Length: 71
+                                    Signature: 3045022100c5a256c8b6bd877144246cbbf0cc982ca16348…
+                                Signed Certificate Timestamp (Unknown Log)
+                                    Serialized SCT Length: 118
+                                    SCT Version: 0
+                                    Log ID: 51a3b0f5fd01799c566db837788f0ca47acc1b27cbf79e88…
+                                    Timestamp: Mar 23, 2020 16:42:41.658000000 UTC
+                                    Extensions length: 0
+                                    Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
+                                        Signature Hash Algorithm Hash: SHA256 (4)
+                                        Signature Hash Algorithm Signature: ECDSA (3)
+                                    Signature Length: 71
+                                    Signature: 304502202ac9ed881aadf00bbc0c0001164c484842e13f75…
+                    algorithmIdentifier (sha256WithRSAEncryption)
+                        Algorithm Id: 1.2.840.113549.1.1.11 (sha256WithRSAEncryption)
+                    Padding: 0
+                    encrypted: d111b1970cb74e5d2586b5009f69888bc2dc67d9c15327c0…
+                Certificate Length: 1176
+                Certificate: 308204943082037ca003020102021001fda3eb6eca75c888… (id-at-commonName=DigiCert SHA2 Secure Server CA,id-at-organizationName=DigiCert Inc,id-at-countryName=US)
+                    signedCertificate
+                        version: v3 (2)
+                        serialNumber: 0x01fda3eb6eca75c888438b724bcfbc91
+                        signature (sha256WithRSAEncryption)
+                            Algorithm Id: 1.2.840.113549.1.1.11 (sha256WithRSAEncryption)
+                        issuer: rdnSequence (0)
+                            rdnSequence: 4 items (id-at-commonName=DigiCert Global Root CA,id-at-organizationalUnitName=www.digicert.com,id-at-organizationName=DigiCert Inc,id-at-countryName=US)
+                                RDNSequence item: 1 item (id-at-countryName=US)
+                                    RelativeDistinguishedName item (id-at-countryName=US)
+                                        Id: 2.5.4.6 (id-at-countryName)
+                                        CountryName: US
+                                RDNSequence item: 1 item (id-at-organizationName=DigiCert Inc)
+                                    RelativeDistinguishedName item (id-at-organizationName=DigiCert Inc)
+                                        Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert Inc
+                                RDNSequence item: 1 item (id-at-organizationalUnitName=www.digicert.com)
+                                    RelativeDistinguishedName item (id-at-organizationalUnitName=www.digicert.com)
+                                        Id: 2.5.4.11 (id-at-organizationalUnitName)
+                                        DirectoryString: printableString (1)
+                                            printableString: www.digicert.com
+                                RDNSequence item: 1 item (id-at-commonName=DigiCert Global Root CA)
+                                    RelativeDistinguishedName item (id-at-commonName=DigiCert Global Root CA)
+                                        Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert Global Root CA
+                        validity
+                            notBefore: utcTime (0)
+                                utcTime: 13-03-08 12:00:00 (UTC)
+                            notAfter: utcTime (0)
+                                utcTime: 23-03-08 12:00:00 (UTC)
+                        subject: rdnSequence (0)
+                            rdnSequence: 3 items (id-at-commonName=DigiCert SHA2 Secure Server CA,id-at-organizationName=DigiCert Inc,id-at-countryName=US)
+                                RDNSequence item: 1 item (id-at-countryName=US)
+                                    RelativeDistinguishedName item (id-at-countryName=US)
+                                        Id: 2.5.4.6 (id-at-countryName)
+                                        CountryName: US
+                                RDNSequence item: 1 item (id-at-organizationName=DigiCert Inc)
+                                    RelativeDistinguishedName item (id-at-organizationName=DigiCert Inc)
+                                        Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert Inc
+                                RDNSequence item: 1 item (id-at-commonName=DigiCert SHA2 Secure Server CA)
+                                    RelativeDistinguishedName item (id-at-commonName=DigiCert SHA2 Secure Server CA)
+                                        Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: printableString (1)
+                                            printableString: DigiCert SHA2 Secure Server CA
+                        subjectPublicKeyInfo
+                            algorithm (rsaEncryption)
+                                Algorithm Id: 1.2.840.113549.1.1.1 (rsaEncryption)
+                            subjectPublicKey: 3082010a0282010100dcae58904dc1c4301590355b6e3c82…
+                                modulus: 0x00dcae58904dc1c4301590355b6e3c8215f52c5cbde3dbff…
+                                publicExponent: 65537
+                        extensions: 7 items
+                            Extension (id-ce-basicConstraints)
+                                Extension Id: 2.5.29.19 (id-ce-basicConstraints)
+                                critical: True
+                                BasicConstraintsSyntax
+                                    cA: True
+                                    pathLenConstraint: 0
+                            Extension (id-ce-keyUsage)
+                                Extension Id: 2.5.29.15 (id-ce-keyUsage)
+                                critical: True
+                                Padding: 1
+                                KeyUsage: 86
+                                    1... .... = digitalSignature: True
+                                    .0.. .... = contentCommitment: False
+                                    ..0. .... = keyEncipherment: False
+                                    ...0 .... = dataEncipherment: False
+                                    .... 0... = keyAgreement: False
+                                    .... .1.. = keyCertSign: True
+                                    .... ..1. = cRLSign: True
+                                    .... ...0 = encipherOnly: False
+                                    0... .... = decipherOnly: False
+                            Extension (id-pe-authorityInfoAccess)
+                                Extension Id: 1.3.6.1.5.5.7.1.1 (id-pe-authorityInfoAccess)
+                                AuthorityInfoAccessSyntax: 1 item
+                                    AccessDescription
+                                        accessMethod: 1.3.6.1.5.5.7.48.1 (id-ad-ocsp)
+                                        accessLocation: 6
+                                            uniformResourceIdentifier: http://ocsp.digicert.com
+                            Extension (id-ce-cRLDistributionPoints)
+                                Extension Id: 2.5.29.31 (id-ce-cRLDistributionPoints)
+                                CRLDistPointsSyntax: 2 items
+                                    DistributionPoint
+                                        distributionPoint: fullName (0)
+                                            fullName: 1 item
+                                                GeneralName: uniformResourceIdentifier (6)
+                                                    uniformResourceIdentifier: http://crl3.digicert.com/DigiCertGlobalRootCA.crl
+                                    DistributionPoint
+                                        distributionPoint: fullName (0)
+                                            fullName: 1 item
+                                                GeneralName: uniformResourceIdentifier (6)
+                                                    uniformResourceIdentifier: http://crl4.digicert.com/DigiCertGlobalRootCA.crl
+                            Extension (id-ce-certificatePolicies)
+                                Extension Id: 2.5.29.32 (id-ce-certificatePolicies)
+                                CertificatePoliciesSyntax: 1 item
+                                    PolicyInformation
+                                        policyIdentifier: 2.5.29.32.0 (anyPolicy)
+                                        policyQualifiers: 1 item
+                                            PolicyQualifierInfo
+                                                Id: 1.3.6.1.5.5.7.2.1 (id-qt-cps)
+                                                DirectoryString: https://www.digicert.com/CPS
+                            Extension (id-ce-subjectKeyIdentifier)
+                                Extension Id: 2.5.29.14 (id-ce-subjectKeyIdentifier)
+                                SubjectKeyIdentifier: 0f80611c823161d52f28e78d4638b42ce1c6d9e2
+                            Extension (id-ce-authorityKeyIdentifier)
+                                Extension Id: 2.5.29.35 (id-ce-authorityKeyIdentifier)
+                                AuthorityKeyIdentifier
+                                    keyIdentifier: 03de503556d14cbb66f0a3e21b1bc397b23dd155
+                    algorithmIdentifier (sha256WithRSAEncryption)
+                        Algorithm Id: 1.2.840.113549.1.1.11 (sha256WithRSAEncryption)
+                    Padding: 0
+                    encrypted: 233edf4bd23142a5b67e425c1a44cc69d168b45d4be00421…
+    TLSv1.2 Record Layer: Handshake Protocol: Server Key Exchange
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 333
+        Handshake Protocol: Server Key Exchange
+            Handshake Type: Server Key Exchange (12)
+            Length: 329
+            EC Diffie-Hellman Server Params
+                Curve Type: named_curve (0x03)
+                Named Curve: secp256r1 (0x0017)
+                Pubkey Length: 65
+                Pubkey: 04425e42edf0e0e96322f66baa663d7d3e559a26115d2d0f…
+                Signature Algorithm: rsa_pkcs1_sha512 (0x0601)
+                    Signature Hash Algorithm Hash: SHA512 (6)
+                    Signature Hash Algorithm Signature: RSA (1)
+                Signature Length: 256
+                Signature: 8212ce11d9bab334b3ff9347f5136fdfc3fad917566eaa9c…
+    TLSv1.2 Record Layer: Handshake Protocol: Server Hello Done
+        Content Type: Handshake (22)
+        Version: TLS 1.2 (0x0303)
+        Length: 4
+        Handshake Protocol: Server Hello Done
+            Handshake Type: Server Hello Done (14)
+            Length: 0
+

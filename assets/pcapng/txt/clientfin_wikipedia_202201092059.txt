@@ -1,0 +1,16 @@
+Transport Layer Security
+    TLSv1.3 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.2 (0x0303)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1.3 Record Layer: Handshake Protocol: Finished
+        Opaque Type: Application Data (23)
+        Version: TLS 1.2 (0x0303)
+        Length: 69
+        [Content Type: Handshake (22)]
+        Handshake Protocol: Finished
+            Handshake Type: Finished (20)
+            Length: 48
+            Verify Data
+
