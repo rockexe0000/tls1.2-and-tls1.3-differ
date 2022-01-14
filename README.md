@@ -7,7 +7,7 @@
 ![image](./assets/images/20220109215852.png)
 
 
-[線上版](https://github.com/rockexe0000/tls1.2-and-tls1.3-differ)
+
 
 -----
 
@@ -375,8 +375,6 @@ Edit -> Preferences -> Protocols -> TLS -> (Pre)-Master-Secret log filename -> B
 
 server_name: tls-v1-2.badssl.com
 
-
-
 Random: 8632a370e138e428103d540b59005fa1a6dd728c22d15473…
 
 Session ID: e012b525063e224a5a97ebf64f4fae4ff5d244d0f2c3178a…
@@ -591,6 +589,10 @@ Signature Algorithm: ecdsa_secp256r1_sha256 (0x0403)
 
 
 
+
+![](./assets/images/tls.svg)
+
+
 >TLSv1.2 最少會傳4個封包
 TLSv1.3 最少會傳3個封包
 
@@ -598,12 +600,34 @@ TLSv1.3 最少會傳3個封包
 
 -----
 
-**pcapng**
+**online**
 ---
+[this](https://github.com/rockexe0000/tls1.2-and-tls1.3-differ)
 
+
+**pcapng file**
+---
+TLSv1.2
 [tls-v1-2.badssl.com_202201101347.pcapng](./assets/pcapng/tls-v1-2.badssl.com_202201101347.pcapng)
-
+TLSv1.3
 [wikipedia_202201092059.pcapng](./assets/pcapng/wikipedia_202201092059.pcapng)
+
+
+**pcapng file txt**
+---
+TLSv1.2
+[clinethello_tls-v1-2.badssl.com_202201101347.txt](./assets/pcapng/txt/clinethello_tls-v1-2.badssl.com_202201101347.txt)
+[serverhello_tls-v1-2.badssl.com_202201101347.txt](./assets/pcapng/txt/serverhello_tls-v1-2.badssl.com_202201101347.txt)
+[clientfin_tls-v1-2.badssl.com_202201101347.txt](./assets/pcapng/txt/clientfin_tls-v1-2.badssl.com_202201101347.txt)
+[serverfin_tls-v1-2.badssl.com_202201101347.txt](./assets/pcapng/txt/serverfin_tls-v1-2.badssl.com_202201101347.txt)
+
+
+TLSv1.3
+[clienthello_wikipedia_202201092059.txt](./assets/pcapng/txt/clienthello_wikipedia_202201092059.txt)
+[serverhello_wikipedia_202201092059.txt](./assets/pcapng/txt/serverhello_wikipedia_202201092059.txt)
+[clientfin_wikipedia_202201092059.txt](./assets/pcapng/txt/clientfin_wikipedia_202201092059.txt)
+
+
 
 -----
 
